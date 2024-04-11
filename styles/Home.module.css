@@ -3,17 +3,22 @@
   max-width: 1440px;
   padding: 0 1rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .gradientText0 {
-  background: -webkit-linear-gradient(#bfa3da, #84309c, #c735b0);
+  background: -webkit-linear-gradient(#FF66C4, #84309c, #c735b0);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradientText1 {
-  background: -webkit-linear-gradient(#a79af9, #7aa8d2);
+  background: -webkit-linear-gradient(#a79af9, #FF66C4);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,7 +42,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-  text-decoration-color: #84309c;
+  text-decoration-color: #FF66C4;
 }
 
 .title {
