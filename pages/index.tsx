@@ -5,6 +5,7 @@ import { useState } from "react";
 import { utils } from "ethers";
 import Image from 'next/image'
 
+
 const Home: NextPage = () => {
   const allowList = [
     {
