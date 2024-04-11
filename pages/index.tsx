@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import { NextPage } from "next";
 import { useState } from "react";
 import { utils } from "ethers";
+import Image from 'next/image'
 
 const Home: NextPage = () => {
   const allowList = [
@@ -8180,12 +8181,31 @@ const Home: NextPage = () => {
         padding: "1rem"
       }}>
       </div>
-      <img src="/public/duke.png" alt="Duke of Arbitrum" style={{marginRight: "1rem"}} />
-      <h1>Duke</h1>
+      <Image 
+  src="/images/duke.svg" 
+  alt="Duke of Arbitrum" 
+  width={100} 
+  height={100} // replace with the actual height of your image
+/>
+      <div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100%', // adjust this as needed
+}}>
+  <Image 
+    src="/images/duke.svg" 
+    alt="Duke of Arbitrum" 
+    width={100} // replace with the actual width of your image
+    height={100} // replace with the actual height of your image
+  />
+</div>
+<h1 style={{ textAlign: 'center' }}>Duke of Arbitrum</h1>
       <div className={styles.container}>
         <ConnectWallet />
         {address && (
           <div>
+            
             <div style={{
                 backgroundColor: "#222",
                 padding: "2rem",
@@ -8251,7 +8271,7 @@ const Home: NextPage = () => {
   }}>
     <p>CA: 0x6eBFC4f2B92526d6Aa6F75153b66D1E119696b27</p>
     <a href="https://arbiscan.io/token/0x6eBFC4f2B92526d6Aa6F75153b66D1E119696b27" target="_blank" rel="noopener noreferrer" style={{color: "white"}}>
-      View on Arbiscan
+      View DUKE contract on Arbiscan
     </a>
   </div>
     </main>
